@@ -138,7 +138,7 @@ app.get("/", (req, res) => {
 
 app.get("/posts", (req, res) => {
   try {
-    res.status(500).send(JSON.stringify(reviews));
+    res.send(JSON.stringify(reviews));
   } catch (error) {
     throw new Error('something bad happened');
   };
